@@ -28,7 +28,7 @@ const DragCarousel = () => {
         onRequestChange={(index) => setActiveSlideIndex(index)}
         itemsToShow={images.length}
         itemsToScroll={1}
-        // centerMode={true}
+        centerMode={true}
 
         forwardBtnProps={{
           //here you can also pass className, or any other button element attributes
@@ -70,16 +70,12 @@ const DragCarousel = () => {
             itemsToScroll: 1,
             minWidth: 790,
           },
+          
         ]}
         speed={500}
         easing="ease-out"
         updateOnItemClick={true}
         draggable={true}
-
-        // autoplayDirection="forward"
-        // autoPlay={true}
-        // interval={2000}
-        // infiniteLoop={true}
       >
         {/* here you can also pass any other element attributes. Also, you can use your custom components as slides */}
         {images.map((image, index) => (
